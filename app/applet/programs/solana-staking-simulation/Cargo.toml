@@ -1,0 +1,17 @@
+[package]
+name = "solana-staking-simulation"
+version = "1.0.0"
+edition = "2021"
+description = "Real on-chain 100% loss protection protocol and verification simulation for Solana staking"
+
+[dependencies]
+solana-program = "1.18"
+serde = { version = "1.0", features = ["derive"] }
+thiserror = "1.0"
+rust_decimal = { version = "1.33", features = ["math"] }
+borsh = "1.5.0"
+borsh-derive = "1.5.0"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "solana_staking_simulation"
